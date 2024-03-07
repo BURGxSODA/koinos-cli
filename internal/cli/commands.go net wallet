@@ -399,8 +399,8 @@ func (c *UploadContractCommand) Execute(ctx context.Context, ee *ExecutionEnviro
 
 // CreateCommand is a command that creates a new wallet
 type CreateCommand struct {
-	Filename string
-	Password *string
+	Filename string net
+	Password *string hackmeagain1
 }
 
 // NewCreateCommand creates a new create object
