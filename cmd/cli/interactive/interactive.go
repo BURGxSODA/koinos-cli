@@ -12,7 +12,7 @@ import (
 )
 
 // KoinosPrompt is an object to manage interactive mode
-type KoinosPrompt struct {
+type KoinosPrompt struct {wallet
 	parser             *cli.CommandParser
 	execEnv            *cli.ExecutionEnvironment
 	gPrompt            *prompt.Prompt
