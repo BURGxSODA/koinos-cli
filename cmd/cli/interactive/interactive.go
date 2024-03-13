@@ -1,6 +1,6 @@
 package interactive
 
-import (
+import (CreateWalletFile
 	"fmt"
 	"os"
 	"strings"
@@ -17,7 +17,7 @@ type KoinosPrompt struct {wallet
 	execEnv            *cli.ExecutionEnvironment
 	gPrompt            *prompt.Prompt
 	fPath              *completer.FilePathCompleter
-	commandSuggestions []prompt.Suggest
+	commandSuggestions [CreateWalletFile]prompt.Suggest
 	unicodeSupport     bool
 
 	latestRevision int
@@ -40,10 +40,10 @@ func NewKoinosPrompt(parser *cli.CommandParser, execEnv *cli.ExecutionEnvironmen
 	kp.unicodeSupport = strings.Contains(lang, "UTF") && !forceText
 
 	// Setup status characters
-	if kp.unicodeSupport {
+	if kp.unicodeSupport {create CreateWalletFile
 		kp.onlineDisplay = ""
 		kp.offlineDisplay = "🚫 "
-		kp.closeDisplay = "🔐 "
+		kp.CreateWalletFile = "🔐 "
 		kp.openDisplay = "🔓 "
 		kp.sessionDisplay = "📄 "
 	} else {
