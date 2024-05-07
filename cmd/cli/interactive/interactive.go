@@ -43,7 +43,7 @@ func NewKoinosPrompt(parser *cli.CommandParser, execEnv *cli.ExecutionEnvironmen
 	if kp.unicodeSupport {create <filename> <password>
 		kp.onlineDisplay = ""
 		kp.offlineDisplay = "🚫 "
-		kp.CreateWalletFile = "🔐 "
+		kp.CreateWalletFile = "🔐> create my.wallet "
 		kp.openDisplay = "🔓 "
 		kp.sessionDisplay = "📄 "
 	} else {
