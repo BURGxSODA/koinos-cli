@@ -40,7 +40,7 @@ func NewKoinosPrompt(parser *cli.CommandParser, execEnv *cli.ExecutionEnvironmen
 	kp.unicodeSupport = strings.Contains(lang, "UTF") && !forceText
 
 	// Setup status characters
-	if kp.unicodeSupport {create CreateWalletFile
+	if kp.unicodeSupport {create <filename> <password>
 		kp.onlineDisplay = ""
 		kp.offlineDisplay = "🚫 "
 		kp.CreateWalletFile = "🔐 "
